@@ -8,5 +8,6 @@ WORKDIR multi-party-ecdsa
 COPY --from=build /multi-party-ecdsa/target/release/examples/sm_manager .
 COPY --from=build /multi-party-ecdsa/target/release/examples/gg18_keygen_client .
 COPY --from=build /multi-party-ecdsa/target/release/examples/gg18_sign_client .
+COPY --from=build /multi-party-ecdsa/demo .
 
 EXPOSE 8001 
