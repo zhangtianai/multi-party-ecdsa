@@ -11,3 +11,4 @@ services:
                       ./run_in_docker.sh"
     volumes:
       - ~/KZen-networks/multi-party-ecdsa/temp/:/multi-party-ecdsa/temp/
+      - ~/KZen-networks/multi-party-ecdsa/demo/:/multi-party-ecdsa/demo/
