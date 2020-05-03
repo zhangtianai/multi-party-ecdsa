@@ -9,13 +9,13 @@ services:
       cp /multi-party-ecdsa/temp/run_in_docker.sh /multi-party-ecdsa/demo &&
       chmod 777 demo/run_in_docker.sh &&
       cd demo &&
-      ./run_in_docker.sh"
+      ./run_in_docker.sh && /multi-party-ecdsa/sm_manager"
     ports:
       - "8001:8001"
     stdin_open: true
     tty: true
     privileged: true
-    entrypoint: ["/multi-party-ecdsa/sm_manager"] # 执行 sh    
+   # entrypoint: ["/multi-party-ecdsa/sm_manager"] # 执行 sh    
     volumes:
       - ~/KZen-networks/multi-party-ecdsa/temp/:/multi-party-ecdsa/temp/
       - ~/KZen-networks/multi-party-ecdsa/demo/:/multi-party-ecdsa/demo/
