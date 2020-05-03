@@ -9,7 +9,7 @@ services:
       cp /multi-party-ecdsa/temp/run_in_docker.sh /multi-party-ecdsa/demo &&
       chmod 777 demo/run_in_docker.sh &&
       cd demo &&
-      ./run_in_docker.sh && /multi-party-ecdsa/sm_manager"
+      ./run_in_docker.sh"
     ports:
       - "8001:8001"
     stdin_open: true
