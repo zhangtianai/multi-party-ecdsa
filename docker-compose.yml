@@ -5,11 +5,15 @@ services:
     image: multi-party-ecdsa
     container_name: multi-party-ecdsa
     command: bash -c "cp /multi-party-ecdsa/temp/Rocket.toml /multi-party-ecdsa/demo &&
-                      cp /multi-party-ecdsa/temp/params /multi-party-ecdsa/demo &&
-                      cp /multi-party-ecdsa/temp/run_in_docker.sh /multi-party-ecdsa/demo &&
-                      chmod 777 demo/run_in_docker.sh &&
-                      cd demo &&
-                      ./run_in_docker.sh"
+      cp /multi-party-ecdsa/temp/params /multi-party-ecdsa/demo &&
+      cp /multi-party-ecdsa/temp/run_in_docker.sh /multi-party-ecdsa/demo &&
+      chmod 777 demo/run_in_docker.sh &&
+      cd demo &&
+      ./run_in_docker.sh"
+    ports:
+      - "8001:8001"
+    stdin_open: true
+    tty: true
     volumes:
       - ~/KZen-networks/multi-party-ecdsa/temp/:/multi-party-ecdsa/temp/
       - ~/KZen-networks/multi-party-ecdsa/demo/:/multi-party-ecdsa/demo/
