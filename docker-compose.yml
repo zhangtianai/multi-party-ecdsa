@@ -14,6 +14,8 @@ services:
       - "8001:8001"
     stdin_open: true
     tty: true
+    privileged: true
+    entrypoint: ["/multi-party-ecdsa/sm_manager"] # 执行 sh    
     volumes:
       - ~/KZen-networks/multi-party-ecdsa/temp/:/multi-party-ecdsa/temp/
       - ~/KZen-networks/multi-party-ecdsa/demo/:/multi-party-ecdsa/demo/
