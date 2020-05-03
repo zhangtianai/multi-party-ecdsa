@@ -1,3 +1,9 @@
+# Step to Use
+vi params
+
+demo/docker_demo.sh
+
+
 # Multi-party ECDSA
 
 [![Build Status](https://travis-ci.com/KZen-networks/multi-party-ecdsa.svg?branch=master)](https://travis-ci.com/KZen-networks/multi-party-ecdsa)
