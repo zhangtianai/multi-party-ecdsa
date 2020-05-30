@@ -1,3 +1,6 @@
+# build the docker image
+docker build -t multi-party-ecdsa .
+
 # Step to Use
 vi params
 
