@@ -1,7 +1,7 @@
-# build the docker image
+# step 1 build the docker image
 docker build -t multi-party-ecdsa .
 
-# Step to Use
+# Step 2 change the params
 vi params
 
 demo/docker_demo.sh
